@@ -1,8 +1,8 @@
-# Tugas Pemrograman Berbasis Web Back-End  
+# Praktikum Pemrograman Web Berbasis Back-End  
   
 **Nama**  : Intan Kartika  
 **NPM**   : 230660221018  
-**Kelas** : SI-IVB  
+**Kelas** : SI-VB  
 
 
 
