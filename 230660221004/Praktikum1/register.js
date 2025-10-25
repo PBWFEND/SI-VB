@@ -1,5 +1,4 @@
 // register.js
-
 // --- INPUT DATA ---
 const firstName = "Rian";
 const lastName = "Rianto";
@@ -20,7 +19,7 @@ const initialLastName = lastName.slice(0, 1);   // Hasil: "R"
 const lastNikDigits = nik.slice(-4); // Hasil: "0003"
 
 // 3. Gabungkan semuanya dan ubah ke huruf besar
-const employeeID = (initialFirstName + initialLastName + lastNikDigits).toUpperCase(); // Hasil: "IK0003"
+const employeeID = (initialFirstName + initialLastName + lastNikDigits).toUpperCase(); // Hasil: "RR0003"
 
 // 4. Format Gaji ke format Rupiah
 const formattedSalary = `Rp ${grossSalary.toLocaleString('id-ID')}`; // Hasil: "Rp 9.500.000"
