@@ -1,0 +1,23 @@
+
+Algoritma Pegawai
+
+idPegawai       : int
+namaPegawai     : varchar
+username        : varchar
+password        : varchar
+jabatan         : varchar
+
+Proses:
+Input (Masukkan Nama Pegawai)
+Output (namaPegawai)
+
+Input (Masukkan Username)
+Output (username)
+
+Input (Masukkan Password)
+Output (password)
+
+Input (Masukkan Jabatan Pegawai)
+Output (jabatan)
+
+Output (Data pegawai berhasil diproses)
