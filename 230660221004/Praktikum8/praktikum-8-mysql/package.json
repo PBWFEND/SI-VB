@@ -1,0 +1,16 @@
+{
+  "name": "praktikum-8-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "crud_mysql.js",
+  "scripts": {
+    "start": "node crud_mysql.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.15.3"
+  }
+}

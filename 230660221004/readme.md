@@ -129,6 +129,77 @@ const tugasBelumSelesai = tasks.filter(task => !task.selesai);
 map()
 Mengambil daftar nama tugas saja sebagai ringkasan.
 
+G. Praktikum 8 
+— Supabase (Cloud)
+
+Integrasi JavaScript/Node.js dengan backend cloud Supabase.
+
+File: crud_supabase.js
+
+Fitur:
+
+Koneksi ke Supabase via API URL & API Key
+
+CRUD:
+
+INSERT — tambah data
+
+SELECT — baca data
+
+UPDATE — edit data
+
+DELETE — hapus data
+
+Menjalankan query pada tabel todos
+
+Saya belajar:
+
+Konsep backend tanpa server (Serverless DB)
+
+Auth, table editor, dan SQL cloud Supabase
+
+Membuat API Key & pengaturan RLS
+
+Cara kerja client library @supabase/supabase-js
+
+ — MySQL Lokal (XAMPP)
+
+Latihan CRUD dengan database lokal.
+
+File: crud_mysql.js
+
+Fitur:
+
+Connect ke MySQL via mysql2/promise
+
+Query parameterized (?) → mencegah SQL Injection
+
+Operasi:
+
+INSERT
+
+SELECT
+
+UPDATE
+
+DELETE
+
+Saya belajar:
+
+Membuat database baru di phpMyAdmin
+
+Membuat tabel manual menggunakan SQL:
+
+CREATE TABLE todos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  tugas TEXT NOT NULL,
+  selesai BOOLEAN DEFAULT false,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+Menjalankan Node.js dengan database lokal
+
 🔹📝 Tugas UTS – JavaScript / Node.js
 Folder UTS/ berisi lima soal yang harus diselesaikan menggunakan konsep dari modul 1–5 dengan fokus pada logika, bukan hafalan sintaks.
 1. soal1.js – Kalkulator Grade Nilai
@@ -164,25 +235,31 @@ Mengganti string biasa → template literals
 ini memperkuat kebiasaan menulis kode modern dan bersih.
 
 💻 Cara Saya Menjalankan
-# Contoh menjalankan skrip Biodata
+// Contoh menjalankan skrip Biodata
 node Biodata.js
-# Contoh menjalankan skrip register
+// Contoh menjalankan skrip register
 node register.js
-# Contoh menjalankan skrip grade_mahasiswa
+// Contoh menjalankan skrip grade_mahasiswa
 node grade_mahasiswa.js
-# Contoh menjalankan skrip Penjualan
+// Contoh menjalankan skrip Penjualan
 node Penjualan.js
-# Contoh menjalankan skrip todolist
+// Contoh menjalankan skrip todolist
 node todolist.js
-# Contoh menjalankan skrip akun bank
+// Contoh menjalankan skrip akun bank
 node akun_bank.js
-# Contoh menjalankan skrip Mobil.
+// Contoh menjalankan skrip Mobil.
 node Mobil.js
-# Contoh menjalankan skrip Mobil_modern
+// Contoh menjalankan skrip Mobil_modern
 node Mobil_modern.js
-# Contoh menjalankan skrip todolis_modern
+// Contoh menjalankan skrip todolis_modern
 node todolist_modern.js
-# Contoh menjalankan skrip UTS
+// Contoh menjalankan skrip crud_supabase.js
+node crud_supabase.js
+// Contoh menjalankan skrip crud_mysql.js
+node crud_mysql.js
+
+
+// Contoh menjalankan skrip UTS
 1. node soal1.js
 2. node soal2.js
 3. node soal3.js
