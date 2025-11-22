@@ -1,0 +1,28 @@
+// soal5.js
+const data = {
+  nama: "Perpustakaan Digital",
+  koleksi: ["Buku A", "Buku B"]
+};
+
+const tambahKoleksi = (item) => {
+  if (!item) {
+    console.log("Item tidak boleh kosong.");
+    return;
+  }
+  data.koleksi.push(item);
+  console.log("Koleksi berhasil ditambah!");
+};
+
+const cekKoleksi = (item) => {
+  const ada = data.koleksi.includes(item);
+  if (ada) {
+    console.log(`Item '${item}' ada di perpustakaan.`);
+  } else {
+    console.log(`Item '${item}' tidak ditemukan.`);
+  }
+};
+
+// Demonstrasi
+tambahKoleksi("Buku C");
+cekKoleksi("Buku A");
+cekKoleksi("Buku Z");
