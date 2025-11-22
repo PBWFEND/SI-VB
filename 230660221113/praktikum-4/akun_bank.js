@@ -4,7 +4,7 @@
 const akun = {
   // --- PROPERTIES ---
   nomorAkun: "ACC001",
-  namaPemilik: "Intan Kartika", // ganti dengan namamu sendiri
+  namaPemilik: "Muhammad Andre", // ganti dengan namamu sendiri
   saldo: 500000, // saldo awal
 
   // --- METHODS ---
