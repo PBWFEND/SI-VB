@@ -1,0 +1,16 @@
+{
+  "name": "praktikum-8-supabase",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CRUD Supabase sesuai modul praktikum",
+  "main": "crud_supabase.js",
+  "scripts": {
+    "start": "node crud_supabase.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
