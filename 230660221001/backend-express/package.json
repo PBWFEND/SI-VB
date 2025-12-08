@@ -1,0 +1,24 @@
+{
+  "name": "backend-express",
+  "version": "1.0.0",
+  "description": "Pemrograman Berbasis Web Back End",
+  "license": "ISC",
+  "author": "Ghatan Zalfaa Kautsar_230660221001",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  }
+}
