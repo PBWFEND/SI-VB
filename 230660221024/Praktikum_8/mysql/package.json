@@ -1,0 +1,16 @@
+{
+  "name": "praktikum-8-mysql",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CRUD MySQL lokal sesuai modul praktikum",
+  "main": "crud_mysql.js",
+  "scripts": {
+    "start": "node crud_mysql.js"
+  },
+  "dependencies": {
+    "mysql2": "^3.15.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
