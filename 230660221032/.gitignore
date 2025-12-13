@@ -1,0 +1,13 @@
+# Abaikan SEMUA folder node_modules di semua praktikum
+**/node_modules/
+
+# Abaikan SEMUA file rahasia/konfigurasi database
+**/.env
+
+# Abaikan file hasil generate Prisma
+**/generated/prisma/
+
+# Abaikan file sampah sistem atau backup
+**/*.bak
+**/*.log
+.DS_Store
