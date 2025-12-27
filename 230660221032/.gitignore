@@ -11,3 +11,5 @@
 **/*.bak
 **/*.log
 .DS_Store
+**/dist/
+**/build/

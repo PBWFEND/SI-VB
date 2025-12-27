@@ -1,33 +1,39 @@
-// Import express
-const express = require('express');
+//import express
+const express = require('express')
 
-// Import CORS
-const cors = require('cors');
+//import CORS
+const cors = require('cors')
 
-// Import body parser
-const bodyParser = require('body-parser');
+//import bodyParser
+const bodyParser = require('body-parser')
 
-// Inisialisasi aplikasi
-const app = express();
+//import router
+const router = require('./routes')
 
-// Gunakan CORS
-app.use(cors());
+//init app
+const app = express()
 
-// Parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+//use cors
+app.use(cors())
 
-// Parse application/json
-app.use(bodyParser.json());
+//use body parser
+app.use(bodyParser.urlencoded({ extended: false }))
 
-// Definisikan port
+// parse application/json
+app.use(bodyParser.json())
+
+//define port
 const port = 3000;
 
-// Route dasar
+//route
 app.get('/', (req, res) => {
-  res.send('Hello World! Selamat Datang');
-});
+  res.send('Hello World!')
+})
 
-// Mulai server
+//define routes
+app.use('/api', router);
+
+//start server
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
+    console.log(`Server started on port ${port}`);
+})
