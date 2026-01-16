@@ -1,0 +1,243 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: url('/BG.jpg');
+}
+
+/* ===============================
+   CENTER LAYOUT
+================================ */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 16px;
+}
+
+/* ===============================
+   MAIN CARD
+================================ */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   HEADER
+================================ */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* ===============================
+   FORM
+================================ */
+label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button.primary {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+button.primary:hover {
+  background: #1d4ed8;
+}
+
+button.delete {
+  background: #ef4444;
+  color: white;
+}
+
+button.delete:hover {
+  background: #dc2626;
+}
+
+button.logout {
+  background: #6b7280;
+  color: white;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Header bar (logout) */
+.header-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #3f4962; 
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto; 
+}
+
+.logout-btn:hover {
+  background: #4b5563;
+}
+
+/* Login Page */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/BG.jpg');
+}
+
+.login-card {
+  background: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-card label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #3b82f6;
+}
+
+/* tombol utama (dipakai juga di Diary) */
+button.primary {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  background: #1d4ed8;
+}
+
+
+/* ===============================
+   DIARY LIST
+================================ */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.diary-item {
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diary-text {
+  max-width: 80%;
+}
+
+.diary-text b {
+  color: #111827;
+}
+
+.diary-text p {
+  font-size: 13px;
+  color: #374151;
+  margin-top: 4px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 500px) {
+  .container {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
